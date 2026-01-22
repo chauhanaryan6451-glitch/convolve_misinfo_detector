@@ -4,8 +4,6 @@
 
 ---
 
-## 🚀 Key Features
-
 * **🤖 Agentic Workflow:**
   * **Retriever Agent:** Handles vector search and memory boosting.
   * **Forensic Agent:** Performs zero-shot semantic verification (distinguishes specific hoaxes from generic images).
@@ -25,23 +23,33 @@
 
 ## 📦 Installation
 
-1. **Clone the Repository**
-   ```bash
-   git clone <your-repo-url>
-Install Dependencies
+### 1. Clone the Repository
+```bash
+git clone <your-repo-url>
+cd convolve_misinfo_detector
+```
 
-Bash
+### 2. Install Dependencies
+```bash
 pip install -r requirements.txt
-Configure API Key Create a .env file:
+```
 
-Ini, TOML
+### 3. Configure API Key
+Create a `.env` file in the root directory and add your Groq key:
+```ini
 GROQ_API_KEY=gsk_your_actual_key_here
-🏃‍♂️ How to Run
-Step 1: Ingest Data Process images and build the vector database.
+```
 
-Bash
+### 4. Run the Application
+
+**Step 1: Ingest Data**
+Process images and build the vector database.
+```bash
 python src/ingestion.py
-Step 2: Launch App Start the interface.
+```
 
-Bash
+**Step 2: Launch App**
+Start the interface.
+```bash
 streamlit run app.py
+```
