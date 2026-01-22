@@ -13,6 +13,29 @@
 
 ---
 
+## 📂 Project Structure
+
+Ensure your project files are organized like this:
+
+```text
+FACT_CHECKER/
+├── .env                     # API keys
+├── app.py                   # Main Streamlit application
+├── requirements.txt         # Python dependencies
+├── data/
+│   ├── manual_db/
+│   │   ├── images/          # Reference images (e.g., shark.jpg)
+│   │   └── metadata.csv     # Metadata for manual database
+│   ├── truth_db/            # Vector database (Qdrant collection)
+│   ├── test.jpeg            # Test image
+│   └── test2.jpeg           # Test image
+└── src/
+    ├── agent.py             # Agent logic
+    ├── ingestion.py         # Data processing script
+    └── memory.py            # Neural memory engine
+
+---
+
 ## 🛠️ Tech Stack
 
 * **Frontend:** Streamlit
